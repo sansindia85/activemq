@@ -1,1 +1,1 @@
-# activemq
+SenderReceiver - Hello AMQP. Uses Queues.

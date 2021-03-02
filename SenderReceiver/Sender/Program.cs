@@ -1,4 +1,5 @@
 ﻿using Amqp;
+using System;
 
 namespace Sender
 {
@@ -13,12 +14,13 @@ namespace Sender
             Message message = new Message("Hello AMQP!");
             SenderLink sender = new SenderLink(session, "sender-link", "q1");
             sender.Send(message);
+            Console.WriteLine("Sent Hello AMQP! ");
 
             sender.Close();
             session.Close();
             connection.Close();
 
-
+            Console.ReadLine();
         }
     }
 }

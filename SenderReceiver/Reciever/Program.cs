@@ -20,6 +20,7 @@ namespace Reciever
             session.Close();
             connection.Close();
 
+            Console.ReadLine();
         }
     }
 }
