@@ -6,4 +6,6 @@ ActiveMQTopic - The topic messages are only sent to active subscribers. The mess
 
 ActiveMQQueue - Supports temporal coupling. The Producer can producer messages. The Subscriber can read when it is available.
 
+ActiveMQQueueListener - Asynchronous Subscriber which listens method on receiver.
+
 
